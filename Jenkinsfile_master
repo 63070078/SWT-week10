@@ -14,7 +14,7 @@ pipeline {
 
             stage('Build Stage'){
                 steps {
-                    dir('SWDEV') {
+                    dir('SWT-week10') {
                         echo "Current path is ${pwd()}"
                         sh "docker-compose build"
                     }
